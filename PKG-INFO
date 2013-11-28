@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: pyhash
+Version: 0.5.0
+Summary: Python Non-cryptographic Hash Library
+Home-page: http://code.google.com/p/pyfasthash/
+Author: Flier Lu
+Author-email: flier.lu@gmail.com
+License: Apache Software License
+Download-URL: http://code.google.com/p/pyfasthash/downloads/list
+Description: pyhash is a python non-cryptographic hash library, including FNV1, MurmurHash1/2/3, lookup3, SuperFastHash, etc
+Platform: x86
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
