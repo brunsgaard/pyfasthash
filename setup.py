@@ -26,7 +26,7 @@ source_files = [os.path.join('src', file) for file in ['Hash.cpp']]
 
 for lib, files in libraries.items():
     source_files += [os.path.join('src', lib, file) for file in files]
-    
+
 macros = [
     ("BOOST_PYTHON_STATIC_LIB", None),
 ]
@@ -50,7 +50,7 @@ if os.name == "nt":
     library_dirs += [
         os.path.join(os.environ.get('BOOST_HOME'), 'stage/lib'),
         os.path.join(os.environ.get('PYTHON_HOME'), 'libs'),
-    ]  
+    ]
 
     extra_compile_args += ["/O2", "/GL", "/MT", "/EHsc", "/Gy", "/Zi"]
     extra_link_args += ["/DLL", "/OPT:REF", "/OPT:ICF", "/MACHINE:X64" if is_64bit else "/MACHINE:X86"]
@@ -61,6 +61,12 @@ elif os.name == "posix" and sys.platform == "darwin":
         '/usr/local/include'
     ]
     libraries += ["boost_python-mt"]
+elif os.name == "posix" and "freebsd" in sys.platform:
+    include_dirs += [
+        '/opt/local/include',
+        '/usr/local/include'
+    ]
+
 elif os.name == "posix":
     libraries += ["boost_python", "rt"]
 
@@ -101,7 +107,7 @@ setup(name='pyhash',
         'License :: OSI Approved :: Apache Software License',
         'Natural Language :: English',
         'Operating System :: Microsoft :: Windows',
-        'Operating System :: POSIX', 
+        'Operating System :: POSIX',
         'Programming Language :: C++',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
