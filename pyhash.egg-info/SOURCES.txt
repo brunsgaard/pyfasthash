@@ -4,6 +4,7 @@ pyfasthash.kpf
 pyhash.kpf
 pyhash.py
 pyhash.sln
+setup.cfg
 setup.py
 pyhash.egg-info/PKG-INFO
 pyhash.egg-info/SOURCES.txt

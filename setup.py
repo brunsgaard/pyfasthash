@@ -66,7 +66,7 @@ elif os.name == "posix" and "freebsd" in sys.platform:
         '/opt/local/include',
         '/usr/local/include'
     ]
-
+    libraries += ["boost_python", "rt"]
 elif os.name == "posix":
     libraries += ["boost_python", "rt"]
 
